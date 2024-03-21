@@ -20,16 +20,16 @@
  * 
  * tentukan jumlah faktor dari sebuah bilangan
  */
-var jumlahFaktor = 0;
-var angka = 13;
+// var jumlahFaktor = 0;
+// var angka = 13;
 
-for(var i = 1; i <= angka; i++){
-    if (angka % i === 0) {
-        jumlahFaktor++
+// for(var i = 1; i <= angka; i++){
+//     if (angka % i === 0) {
+//         jumlahFaktor++
         
-    }
-}
-console.log(jumlahFaktor)
+//     }
+// }
+// console.log(jumlahFaktor)
 
 
 
@@ -38,11 +38,49 @@ console.log(jumlahFaktor)
  * CEK BILANGAN PRIMA
  */
 
-if (jumlahFaktor === 2) {
-    console.log("bilangan prima")
+// if (jumlahFaktor === 2) {
+//     console.log("bilangan prima")
     
-} else {
-    console.log("bukan bilangan prima")
+// } else {
+//     console.log("bukan bilangan prima")
+// }
+
+/**STUDY CASE 4
+ * TAMPILKAN SEGITIGA SIKU2
+ */
+
+// var n = 5;
+// var result = ""
+
+// for(var i = 0; i < n; i++){
+//     for(var j = 0; j <= i; j++){
+//         result += "#"
+
+//     }
+//     console.log(result)
+//     result = ""
+// }
+
+// var x = 5;
+// var hasil = ""
+
+// for(var i = 0; i < x; i++){
+//     for(var j = 1; j <= i + 1; j++){
+//         hasil += j
+
+//     }
+//     console.log(hasil)
+//     hasil = ""
+// }
+
+var y = 5;
+var hasil2 = ""
+
+for(var i = 0; i < y; i++){
+    for(var j = 1; j <= y; j++){
+        hasil2 += "*"
+
+    }
+    console.log(hasil2)
+    hasil2 = ""
 }
-
-
