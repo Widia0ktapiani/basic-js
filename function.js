@@ -27,15 +27,15 @@
  * Menghitung jumlah Kata
  */
 
-// function splitToArray(str){
-//     var tempArray = str.split(" ");
-//     return tempArray;
-// }
-// function jumlahKata(kalimat) {
-//     var result = splitToArray(kalimat);
-//     var arrayLength = result.length;
-//     return arrayLength;
-// }
+function splitToArray(str){
+    var tempArray = str.split(" ");
+    return tempArray;
+}
+function jumlahKata(kalimat) {
+    var result = splitToArray(kalimat);
+    var arrayLength = result.length;
+    return arrayLength;
+}
 
 // console.log (jumlahKata("Hello Selamat Pagi"));
 
@@ -51,16 +51,16 @@
  * 6
  */
 
-// function cekJumlahFaktor(num) {
-//     var Faktor= 0;
-//     for(i = 0; i <= num; i++){
-//         if (num % i === 0) {
-//             Faktor++;  
-//         }
-//     } 
-//     return Faktor;
+function cekJumlahFaktor(num) {
+    var Faktor= 0;
+    for(i = 0; i <= num; i++){
+        if (num % i === 0) {
+            Faktor++;  
+        }
+    } 
+    return Faktor;
     
-// } 
+} 
 // console.log (cekJumlahFaktor(5));
 
 /**STUDY CASE 3
@@ -74,15 +74,15 @@
  * Bilangan Prima
  */
 
-// function cekBilanganPrima(num) {
-//     var jumlahFaktor = cekJumlahFaktor(num);
-//     if (jumlahFaktor === 2) {
-//         return "Bilangan Prima";
+function cekBilanganPrima(num) {
+    var jumlahFaktor = cekJumlahFaktor(num);
+    if (jumlahFaktor === 2) {
+        return "Bilangan Prima";
         
-//     } else {
-//         return "Bukan Bilangan Prima";
-//     }
-// } 
+    } else {
+        return "Bukan Bilangan Prima";
+    }
+} 
 // console.log(cekBilanganPrima(5)); // dilihat jumlah faktorialnya apakah sama dengan 2
 
 
@@ -98,38 +98,38 @@
  */
 
 //cara 1
-// function splitToArray(str){
-//     var tempArray = str.split(" ");
-//     return tempArray;
-//  }
+function splitToArray(str){
+    var tempArray = str.split(" ");
+    return tempArray;
+ }
 
-// function pecahKalimat(kalimat) {
-//     var result = splitToArray(kalimat);
-//     return result;
-// }
+function pecahKalimat(kalimat) {
+    var result = splitToArray(kalimat);
+    return result;
+}
 // console.log (pecahKalimat("buka bersama teman kuliah"));
 
 //cara 2
-// function pecahKalimat(str) {
-//     var arrResult = []
-//     var temp = ""
+function pecahKalimat(str) {
+    var arrResult = []
+    var temp = ""
 
-//     for (i = 0; i < str.length; i++){
-//         if(str[i] !== " ") {
-//             //console.log(str[i]);
-//             temp += str[i];
-//         } else {
-//             arrResult.push(temp);
-//             temp = "";
-//         }
-//         if (i == str.length - 1) {
-//             arrResult.push(temp);
-//             temp = "";
+    for (i = 0; i < str.length; i++){
+        if(str[i] !== " ") {
+            //console.log(str[i]);
+            temp += str[i];
+        } else {
+            arrResult.push(temp);
+            temp = "";
+        }
+        if (i == str.length - 1) {
+            arrResult.push(temp);
+            temp = "";
             
-//         }
-//     }
-//   console.log(arrResult);  
-// }
+        }
+    }
+  console.log(arrResult);  
+}
 // pecahKalimat("buka puasa bersama teman kuliah")
 
 
@@ -144,13 +144,13 @@
  * Avarage = 3.00
  */
 
-// function countAverage(numbers) {
-//     var sum = 0;
-//     for ( i = 0; i < numbers.length; i++) {
-//         sum += numbers[i];
-//     }
-//     return (sum / numbers.length).toFixed(2);
-// }
+function countAverage(numbers) {
+    var sum = 0;
+    for ( i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+    }
+    return (sum / numbers.length).toFixed(2);
+}
 // console.log (countAverage([1,2,3,4,5]))
 
 
@@ -176,7 +176,7 @@ function countXO(str) {
             
         }
     }
-    
+
     if (countX === countO) {
         return true;
         
@@ -186,24 +186,5 @@ function countXO(str) {
     }
     
 }
-console.log(countXO('xxxooo'));
+// console.log(countXO('xxxooo'));
 
-function countXO(str) {
-    var countO = 0;
-    var countX = 0;
-    for (var i = 0; i < str.length; i++) {
-      if (str[i] === "x") {
-        countX++;
-      } else if (str[i] === "o") {
-        countO++;
-      }
-    }
-  
-    if (countX === countO) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-  
-  // console.log(countXO("xoxoxoxoxoxo"));
