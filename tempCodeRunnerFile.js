@@ -1,1 +1,1 @@
-  console.log(arrResult);
+addItem("Keyboard gaming", "keyboard", 50000, 2);
