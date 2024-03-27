@@ -74,10 +74,44 @@ function hello() {
 // hello()
 
 //function expression
-const helloexpression = function(){
-
+const helloExpression = function(){
+    console.log("hello expression");
 }
+// helloExpression()
 
+//function arrow
+const helloArrow = () => {
+    console.log("hello Arrow");
+}
+helloArrow()
+
+//high order function
+ let scores = [7, 2, 3, 5, 1]
+
+ scores.forEach((score) => {
+    console.log(score)
+ });
+
+ let powerScores = scores.map((score) => score ** 2);
+
+ let filterScores = powerScores.filter((score) => score > 10);
+
+//  console.log(powerScores);
+ console.log(filterScores);
+
+ //Destructuring
+
+ //array
+
+ let students = ["vincent", 3.21, true];
+
+ //ES5
+//  let name = students[0]
+//  let gpa = students[1]
+//  let isGraduated = students[2]
+
+ //ES6
+ let [name, gpa, isGraduated] = students;
 
 //study case: buat sebuah inventory management
 
@@ -164,5 +198,5 @@ const updateCart = (id,name,type,price,status,stock) => {
     })
 }
 // addItem("Keyboard gaming", "keyboard", 50000, 2);
-showCarts();
+// showCarts();
 // getCartById(1);

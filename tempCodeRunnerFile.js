@@ -1,1 +1,1 @@
-addItem("Keyboard gaming", "keyboard", 50000, 2);
+ console.log(filterScores);
